@@ -56,10 +56,10 @@ The output file rows are sorted in descending order by:
     +-- README.md
     +-- run.sh
     +-- [src]
-    ¦   +-- border_analytics.py
+    Â¦   +-- border_analytics.py
     |   +-- functions.py
     +-- [input]
-    ¦   +-- Border_Crossing_Entry_Data.csv
+    Â¦   +-- Border_Crossing_Entry_Data.csv
     +-- [output]
     |   +-- report.csv
     +-- [insight_testsuite]
@@ -67,25 +67,25 @@ The output file rows are sorted in descending order by:
         +-- [tests]
             +-- [test_1]
             |   +-- [input]
-            |   ¦   +-- Border_Crossing_Entry_Data.csv
+            |   Â¦   +-- Border_Crossing_Entry_Data.csv
             |   |__ [output]
-            |   ¦   +-- report.csv
+            |   Â¦   +-- report.csv
             +-- [test_2]
                 +-- [input]
-                ¦   +-- Border_Crossing_Entry_Data.csv
+                Â¦   +-- Border_Crossing_Entry_Data.csv
                 |-- [output]
                     +-- report.csv
 
 
-*[src] contains the source files: 'border_analytics.py' and 'functions.py'
+* [src] contains the source files: 'border_analytics.py' and 'functions.py'
 
-*[input] the input file should go here named as 'Border_Crossing_Entry_Data.csv'
+* [input] the input file should go here named as 'Border_Crossing_Entry_Data.csv'
 
-*[output] here is where the output file will go: 'report.csv'
+* [output] here is where the output file will go: 'report.csv'
 
-*[insight_testsuite]: contains the files to test the program
+* [insight_testsuite]: contains the files to test the program
 
-*[test_1] and [test_2]: are two different tests.
+* [test_1] and [test_2]: are two different tests.
 
 
 3.- SOURCE CODE:
@@ -93,7 +93,7 @@ The output file rows are sorted in descending order by:
    There are two files: 'border_analytics.py' and 'functions.py'.
 
 3.1. 'border_analytics.py':
-   It calls the required functions to read the input file, processes the information, and writes 
+   It calls the required functions to read the input file, process the information, and write 
 the output file. 
 
 Because we are working with large ammount of information, efficient use of memory is a priority.
