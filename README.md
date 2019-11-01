@@ -1,4 +1,4 @@
-TABLE OF CONTENTS:
+﻿TABLE OF CONTENTS:
 
     0. CONTACT
     1. INTRODUCION
@@ -56,32 +56,25 @@ The output file rows are sorted in descending order by:
     +-- README.md
     +-- run.sh
     +-- [src]
-<<<<<<< HEAD
-    |   +-- border_analytics.py
-    |   +-- functions.py
+    |     +-- border_analytics.py
+    |     +-- functions.py
     +-- [input]
-    |   +-- Border_Crossing_Entry_Data.csv
-=======
-    ¦   +-- border_analytics.py
-    |   +-- functions.py
-    +-- [input]
-    ¦   +-- Border_Crossing_Entry_Data.csv
->>>>>>> 0b464750f38c00fd8293785291c119a2a26d36eb
+    ¦     +-- Border_Crossing_Entry_Data.csv
     +-- [output]
-    |   +-- report.csv
+    |     +-- report.csv
     +-- [insight_testsuite]
-        +-- run_tests.sh
-        +-- [tests]
-            +-- [test_1]
-            |   +-- [input]
-            |   ¦   +-- Border_Crossing_Entry_Data.csv
-            |   |__ [output]
-            |   ¦   +-- report.csv
-            +-- [test_2]
-                +-- [input]
-                ¦   +-- Border_Crossing_Entry_Data.csv
-                |-- [output]
-                    +-- report.csv
+          +-- run_tests.sh
+          +-- [tests]
+                +-- [test_1]
+                |     +-- [input]
+                |     ¦     +-- Border_Crossing_Entry_Data.csv
+                |     |__ [output]
+                |     ¦     +-- report.csv
+                +-- [test_2]
+                      +-- [input]
+                      ¦     +-- Border_Crossing_Entry_Data.csv
+                      +-- [output]
+                            +-- report.csv
 
 
 * [src] contains the source files: 'border_analytics.py' and 'functions.py'
