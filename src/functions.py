@@ -97,7 +97,11 @@ def running_averages(dictionary):
 
 def sort_by_date(reader):
 
+<<<<<<< HEAD
     '''Creates a csv file with the same rows in reader but sorted by date.'''
+=======
+    '''Creates a csv file with the rows in reader but sorted by date.'''
+>>>>>>> 0b464750f38c00fd8293785291c119a2a26d36eb
         
     with open('./output/report.csv', 'w', newline='') as csv_final:
                         

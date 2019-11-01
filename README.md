@@ -56,10 +56,17 @@ The output file rows are sorted in descending order by:
     +-- README.md
     +-- run.sh
     +-- [src]
+<<<<<<< HEAD
     |   +-- border_analytics.py
     |   +-- functions.py
     +-- [input]
     |   +-- Border_Crossing_Entry_Data.csv
+=======
+    Â¦   +-- border_analytics.py
+    |   +-- functions.py
+    +-- [input]
+    Â¦   +-- Border_Crossing_Entry_Data.csv
+>>>>>>> 0b464750f38c00fd8293785291c119a2a26d36eb
     +-- [output]
     |   +-- report.csv
     +-- [insight_testsuite]
@@ -67,12 +74,12 @@ The output file rows are sorted in descending order by:
         +-- [tests]
             +-- [test_1]
             |   +-- [input]
-            |   ¦   +-- Border_Crossing_Entry_Data.csv
+            |   Â¦   +-- Border_Crossing_Entry_Data.csv
             |   |__ [output]
-            |   ¦   +-- report.csv
+            |   Â¦   +-- report.csv
             +-- [test_2]
                 +-- [input]
-                ¦   +-- Border_Crossing_Entry_Data.csv
+                Â¦   +-- Border_Crossing_Entry_Data.csv
                 |-- [output]
                     +-- report.csv
 
@@ -93,7 +100,7 @@ The output file rows are sorted in descending order by:
    There are two files: 'border_analytics.py' and 'functions.py'.
 
 3.1. 'border_analytics.py':
-   It calls the required functions to read the input file, processes the information, and writes 
+   It calls the required functions to read the input file, process the information, and write 
 the output file. 
 
 Because we are working with large ammount of information, efficient use of memory is a priority.
