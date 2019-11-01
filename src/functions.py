@@ -10,21 +10,27 @@ def create_lists():
     borders = set()
     transports = set()
 
-    with open('./input/Border_Crossing_Entry_Data.csv', 'r') as csv_file:
+    try:
+        with open('./input/Border_Crossing_Entry_Data.csv', 'r') as csv_file:
 
-        reader = csv.reader(csv_file, delimiter = ',') 
+            reader = csv.reader(csv_file, delimiter = ',') 
 
-        #skips header
-        next(reader)
+            #skips header
+            next(reader)
 
-        for row in reader:
-            borders.add(row[3])
-            transports.add(row[5])      
+            for row in reader:
+                borders.add(row[3])
+                transports.add(row[5])     
 
-    b = list(borders)
-    t = list(transports)
-    b.sort(reverse=True)
-    t.sort(reverse=True)
+    except IOError as e:
+        print(e)
+    except Exception as e:
+        print(e)
+    else:
+        b = list(borders)
+        t = list(transports)
+        b.sort(reverse=True)
+        t.sort(reverse=True)
 
     return(b, t)
 
@@ -36,19 +42,25 @@ def create_transport_matrix(border, transport):
 
     border_arr = []
 
-    with open('./input/Border_Crossing_Entry_Data.csv', mode='r') as csv_file:
+    try:
+        with open('./input/Border_Crossing_Entry_Data.csv', mode='r') as csv_file:
 
-        reader = csv.reader(csv_file, delimiter=',')
+            reader = csv.reader(csv_file, delimiter=',')
 
-        #skips header
-        next(reader)
+            #skips header
+            next(reader)
 
-        for row in reader:
+            for row in reader:
 
-            if(row[3] == border) and (row[5] == transport):
-                border_arr.append(row)
+                if(row[3] == border) and (row[5] == transport):
+                    border_arr.append(row)
     
-    return border_arr
+    except IOError as e:
+        print(e)
+    except Exception as e:
+        print(e)
+    else:
+        return border_arr
     
 
 
@@ -97,19 +109,19 @@ def running_averages(dictionary):
 
 def sort_by_date(reader):
 
-<<<<<<< HEAD
-    '''Creates a csv file with the same rows in reader but sorted by date.'''
-=======
     '''Creates a csv file with the rows in reader but sorted by date.'''
->>>>>>> 0b464750f38c00fd8293785291c119a2a26d36eb
-        
-    with open('./output/report.csv', 'w', newline='') as csv_final:
-                        
-        header = ['Border', 'Date', 'Measure', 'Value', 'Average']
 
-        writer = csv.writer(csv_final)
+    try:    
+        with open('./output/report.csv', 'w', newline='') as csv_final:
+                        
+            header = ['Border', 'Date', 'Measure', 'Value', 'Average']
+
+            writer = csv.writer(csv_final)
         
-        writer.writerow(header)
-        writer.writerows(sorted(reader,
-            key=lambda row: datetime.datetime.strptime(row[1], '%m/%d/%Y %H:%M:%S %p'), reverse=True))
-    
+            writer.writerow(header)
+            writer.writerows(sorted(reader,
+                key=lambda row: datetime.datetime.strptime(row[1], '%m/%d/%Y %H:%M:%S %p'), reverse=True))
+    except IOError as e:
+        print(e)
+    except Exception as e:
+        print(e)
