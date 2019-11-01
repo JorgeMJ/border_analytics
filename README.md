@@ -51,15 +51,15 @@ The output file rows are sorted in descending order by:
 
 2-. FILE STRUCTURE: 
 
-( **In this graph folders are enclosed in square brackets. e.g.[folder] )
-
+( **In this graph folders are enclosed in square brackets. e.g.[folder]** )
+ 
     +-- README.md
     +-- run.sh
     +-- [src]
-    ¦   +-- border_analytics.py
+    |   +-- border_analytics.py
     |   +-- functions.py
     +-- [input]
-    ¦   +-- Border_Crossing_Entry_Data.csv
+    |   +-- Border_Crossing_Entry_Data.csv
     +-- [output]
     |   +-- report.csv
     +-- [insight_testsuite]
@@ -77,15 +77,15 @@ The output file rows are sorted in descending order by:
                     +-- report.csv
 
 
-*[src] contains the source files: 'border_analytics.py' and 'functions.py'
+* [src] contains the source files: 'border_analytics.py' and 'functions.py'
 
-*[input] the input file should go here named as 'Border_Crossing_Entry_Data.csv'
+* [input] the input file should go here named as 'Border_Crossing_Entry_Data.csv'
 
-*[output] here is where the output file will go: 'report.csv'
+* [output] here is where the output file will go: 'report.csv'
 
-*[insight_testsuite]: contains the files to test the program
+* [insight_testsuite]: contains the files to test the program
 
-*[test_1] and [test_2]: are two different tests.
+* [test_1] and [test_2]: are two different tests.
 
 
 3.- SOURCE CODE:

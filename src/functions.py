@@ -97,7 +97,7 @@ def running_averages(dictionary):
 
 def sort_by_date(reader):
 
-    '''Creates a csv file with the sames rows in reader but sorted by date.'''
+    '''Creates a csv file with the same rows in reader but sorted by date.'''
         
     with open('./output/report.csv', 'w', newline='') as csv_final:
                         
@@ -107,5 +107,5 @@ def sort_by_date(reader):
         
         writer.writerow(header)
         writer.writerows(sorted(reader,
-           key=lambda row: datetime.datetime.strptime(row[1], '%m/%d/%Y %H:%M:%S %p'), reverse=True))
+            key=lambda row: datetime.datetime.strptime(row[1], '%m/%d/%Y %H:%M:%S %p'), reverse=True))
     
